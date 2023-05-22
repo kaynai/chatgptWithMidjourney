@@ -3,8 +3,8 @@ import { SubmitKey } from "../store/config";
 const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
-    Unauthorized:
-      "访问密码不正确或为空，请前往[设置](/#/settings)页输入正确的访问密码，或者填入你自己的 OpenAI API Key。",
+   Unauthorized:
+      "关注微信公众号[橘座AI](https://mp.weixin.qq.com/s/eU-2wgq4dokK_ezp7gJPlA)* 回复 **密钥** 免费获取密码，然后点击左下角[设置](/#/settings)按钮输入密码后解锁**免费使用**。\n\n **提问:** 有Mid journey对接绘图网页吗?\n\n **回答:** 有的，关注公众号或者加VX群可了解!\n\n **需要定制相同网站可关注微信公众号或是加微信群联系。\n\n可对接GPT4.0，Mid journey绘图网站。\n\n 常见问题与使用说明点击查看**[https://t.zsxq.com/0eRKoeoFI](https://t.zsxq.com/0eRKoeoFI)**\n\n 卡顿或无响应? 可能是用户量太大，点这里获得独立账号 KEY 使用](https://t.zsxq.com/0eRKoeoFI)\n \n欢迎来聊聊[知识星球](https://t.zsxq.com/0eRKoeoFI)或VX公众号 [橘座AI](https://mp.weixin.qq.com/s/eU-2wgq4dokK_ezp7gJPlA)，\n ",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
@@ -15,7 +15,6 @@ const cn = {
       ChatList: "查看消息列表",
       CompressedHistory: "查看压缩后的历史 Prompt",
       Export: "导出聊天记录",
-      Open: "查看",
       Copy: "复制",
       Stop: "停止",
       Retry: "重试",
@@ -74,14 +73,16 @@ const cn = {
         cn: "简体中文",
         en: "English",
         tw: "繁體中文",
+        fr: "Français",
         es: "Español",
         it: "Italiano",
         tr: "Türkçe",
         jp: "日本語",
         de: "Deutsch",
-        vi: "Vietnamese",
+        vi: "Tiếng Việt",
         ru: "Русский",
         cs: "Čeština",
+        ko: "한국어",
       },
     },
     Avatar: "头像",
@@ -141,34 +142,6 @@ const cn = {
       Placeholder: "OpenAI API Key",
     },
 
-    MjKey: {
-      Title: "MJ API Key",
-      SubTitle: "快捷配置MJ API Key",
-      Placeholder: "Midjourney API Key",
-    },
-
-    MjApiUrl: {
-      Title: "MJ API URL",
-      SubTitle: "配置MJ API URL",
-      Placeholder: "Midjourney API URL",
-    },
-
-    MjMode: {
-      name: "MJ 快速制图",
-      fastMode: false,
-    },
-
-    MjProxyUrl: {
-      name: "MJ 反向代理",
-      Placeholder: "包含http(s)//",
-    },
-
-    MJAccessCode: {
-      Title: "访问密码",
-      SubTitle: "管理员已开启加密访问",
-      Placeholder: "请输入访问密码",
-    },
-
     Usage: {
       Title: "余额查询",
       SubTitle(used: any, total: any) {
@@ -192,7 +165,7 @@ const cn = {
       Title: "单次回复限制 (max_tokens)",
       SubTitle: "单次交互所用的最大 Token 数",
     },
-    PresencePenlty: {
+    PresencePenalty: {
       Title: "话题新鲜度 (presence_penalty)",
       SubTitle: "值越大，越有可能扩展到新话题",
     },
